@@ -1,0 +1,9 @@
+when like btn is clicked
+    -check if directory for the liked user exists, if not create it
+    -check if a txt file for liked user matches exists, if not create it
+    -check if file contains an entry for the username who like the profile
+    -if not add the username for the user who liked the profile into the txt file else exit
+when a logged in user clicks the matches link
+    -check if the user has a matches file, if not then say "no matches"
+    -if file exists pick all usernames and request for each of their data from db
+    -store their details and then display them

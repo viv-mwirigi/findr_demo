@@ -1,0 +1,53 @@
+the chat table should function in a number of ways
+1. It should store the location of the chat sessions for the current user
+   in a folder that has the users specific username
+2. it should have an entry with a unique username (primary key) and unique chatting with 
+   username(primary key) this key can have multiple entries for whom its chatting with e.g
+   user id(1) - assigned username(victor) (pk)
+              - chatting with - alex (pk)
+              - location for their chat eg (/chats/victor/alex/chats.txt)
+   user id(1) - assigned username(victor)(pk)
+              - chatting with - megan(pk)
+              - location for their chat eg (/chats/victor/megan/chats.txt)
+
+
+    my username - their username - my storage for our mutual chats(/chats/victor/alex/chats.txt)
+    their username - my username - their storage for our mutual chats(/chats/alex/victor/chats.txt)
+
+    the above chats must be the same with only slight differences such as sender and recipient
+    if I(victor) send the chat in my chat file(/chats/victor/alex/chats.txt) it should be something
+    like
+        victor(sender): hi
+        alex(recipient): hey
+    in the recipients chat file(/chats/alex/victor/chats.txt) it should be
+        victor(recipient): hi
+        alex(sender): hey
+
+3. you should have 2 insert and 2 select queries
+4. ensure that when you insert new entries that it doesn't overwrite the chat.txt file so most
+    likely you'd use update, only use insert if there doesn't exist a session different file to 
+    update the chats
+
+
+- on loading the chat session with a certain user
+    -check if entry exists in db
+    - if it exists then skip insert and move to select the records
+        -read each line and return to screen
+    - if it doesn't exist then create entry
+        -before executing the sql query make sure to do the following
+            -create the chats file for me (initially it should be empty)
+                - format is 
+                     victor(sender): hi
+                     alex(recipient): hey
+            -create the chats file for recipient (initially it should be empty)
+                - format is
+                     victor(recipient): hi
+                     alex(sender): hey
+            -create the chats folder for the sender(me)(victor)
+                - format is (/chats/victor(me)/alex(recipient)/chats.txt)
+            -create the chats folder for the recipient(alex)
+                - format is (/chats/alex(recipient)/victor(me)/chats.txt)
+        -insert the entry into the table
+
+
+update section

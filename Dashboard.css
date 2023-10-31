@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    background-color: #d8d8e4;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+
+}
+
+
+nav {
+    max-width: 100%;
+    height: 64px;
+    background-color: pink;
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    float: right;
+    padding: 10px;
+}
+
+.logoProfile {
+    position: absolute;
+    top: -1%;
+    left: 45%;
+    width: 142.7px;
+    height: 71px;
+}
+
+.username {
+    float: right;
+    position: absolute;
+    color: white;
+    top: 2%;
+}
+
+#trigram {
+    display: none;
+}
+
+
+/********* Body section **********/
+
+div.backImg {
+    position: relative;
+}
+
+
+.FullName {
+    position: absolute;
+    left: 220px;
+    top: 400px;
+    color: lightgreen;
+}
+
+.age {
+    position: absolute;
+    left: 220px;
+    top: 437px;
+    color: white;
+}
+
+.location {
+    position: absolute;
+    left: 220px;
+    top: 472px;
+    color: white;
+}
+
+.iconBg {
+    position: absolute;
+    background-color: white;
+    display: block;
+    margin: auto;
+    width: 335px;
+    height: 80px;
+    top: 510px;
+    left: 220px;
+    opacity: 0.7;
+    border-radius: 12px;
+}
+
+
+.cancel {
+    display: block;
+    margin: auto;
+    width: 106px;
+    height: 60px;
+}
+
+.like {
+    display: block;
+    margin: auto;
+    width: 106px;
+    height: 60px;
+}
+
+.inputBtns {
+    position: relative;
+    bottom: 0px;
+}
+
+.centerBtn {
+    display: block;
+    margin: auto;
+    margin-top: 4px;
+    border-radius: 14px;
+    padding: 8px 40px;
+    color: #5A5B81;
+}
+
+.main-div {
+    height: 100%;
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
+    
+}
+
+.right-bar {
+    height: 100vh;
+    background-color: white;
+    overflow: auto;
+}
+
+.card {
+    overflow-x: clip;
+}
+
+.card-positioning {
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.notification-push {
+    float: right;
+}
+
+.padding-insurer2 {
+    position: relative;
+    height: 164px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a.like, a.cancel {
+    color: #0d6efd;
+}
+
+a.cancel:hover {
+    color: red;
+}
+
+a.like:hover {
+    color: green;
+}
+
+a.exceptLink {
+    text-decoration: underline;
+    color: black;
+}
+
+.exceptP {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#closeCard {
+    position: absolute;
+    right: 14px;
+}
+
+
+.right-bar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.right-bar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.right-bar::-webkit-scrollbar-thumb {
+    background-color: rgb(222, 228, 209);
+    border-radius: 10px;
+}

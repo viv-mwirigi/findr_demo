@@ -1,0 +1,402 @@
+body {
+    margin: 0;
+    background-color: #d8d8e4;
+    z-index: 0;
+}
+
+.container {
+    max-width: 100%;
+
+}
+
+
+nav {
+    max-width: 100%;
+    height: 64px;
+    background-color: #2c488f6b;
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px;
+    z-index: 3;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    float: right;
+    padding: 10px;
+    z-index: 3;
+}
+
+.logoProfile {
+    position: absolute;
+    top: -1%;
+    left: 45%;
+    width: 142.7px;
+    height: 71px;
+}
+
+.username {
+    position: absolute;
+    color: white;
+    top: 2%;
+    z-index: 0;
+}
+
+#trigram {
+    display: none;
+}
+
+
+
+
+/********* mid-section *********/
+.lowerBox {
+    background-color: #8A6C84;
+    box-shadow: 0.1px 0.1px 20px 0px black;
+    margin-top: 42px;
+    margin-right: 116px;
+    margin-bottom: 20px;
+    left: 16px;
+    z-index: 0;
+}
+
+div.ageStyle {
+    margin-top: 50px;
+    color: white;
+    float: right;
+}
+
+div.ageStyle h2 {
+    text-align: center
+}
+
+div.residenceStyle {
+    margin-top: 50px;
+    color: white;
+}
+
+.floatFirstName > h1 {
+    position: relative;
+    left: 14px;
+    font-size: 64px;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #F9F871;
+    z-index: 3;
+}
+
+.floatSecondName > h1 {
+    position: relative;
+    left: 14px;
+    font-size: 64px;
+    color: transparent;
+    -webkit-text-stroke: 2px #00C896;
+    z-index: 3;
+}
+
+div.residenceStyle h2 {
+    text-align: center;
+}
+
+div.ageNumber {
+    text-align: center;
+    color: black;
+}
+
+div.residenceNumber {
+    text-align: center;
+    color: black;
+    float: right;
+}
+
+hr.verticalRule {
+    position: relative;
+    left: 73%;
+    top: 16%;
+    rotate: 90deg;
+    color: grey;
+    height: 1px;
+    width: 133px;
+    z-index: 4;
+    opacity: 1;
+}
+
+div.distance {
+    margin-top: 28px;
+    color: black;
+}
+
+.pushRow {
+    margin-top: 4%;
+}
+
+.floatFirstName {
+    color: white;
+    position: relative;
+    left: 7%;
+}
+
+.floatSecondName {
+    color: white;
+    position: relative;
+    left: 8%;
+}
+
+.userFollowers {
+    color: white;
+    text-align: center;
+}
+
+.userLikes {
+    color: white;
+    text-align: center;
+}
+
+.userFollowing {
+    color: white;
+    text-align: center;
+}
+
+.userFollowersNo {
+    color: white;
+    text-align: center;
+}
+
+.userLikesNo {
+    color: white;
+    text-align: center;
+}
+
+.userFollowingNo {
+    color: white;
+    text-align: center;
+}
+
+.about {
+    color: pink;
+    position: relative;
+    left: 7%;
+}
+
+.aboutDesc {
+    color: white;
+    position: relative;
+    left: 7%;
+}
+
+.aboutDesc p {
+    padding-right: 14px;
+    position: relative;
+    flex: wrap;
+}
+
+.pushRow2 {
+    margin-top: 0%;
+    display: flex;
+}
+
+.pushRow3 {
+    margin-top: 20%;
+}
+
+.hobby-push {
+    text-align: center;
+}
+
+/******** UserImage design **********/
+
+
+
+.btmRow {
+    position: relative;
+    bottom: -20px;
+    left: 96px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.followBtn {
+    align-items: center;
+    color: white;
+    background-color: #222347;
+    left: 5%;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.followBtn h2{
+    padding: 5px;
+    text-align: center;
+}
+
+.chatBtn {
+    color: white;
+    background-color: #222347;
+    border-radius: 8px;
+    padding: 5px;
+    left: 24%;
+}
+
+.chatBtn h2 {
+    padding: 5px;
+    text-align: center;
+}
+
+/********* second container ************/
+
+.hobby {
+    background-color: #222347;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px white;
+    color: white;
+    margin-bottom: 14px;
+}
+
+.hobbytext {
+    background-color: grey;
+    border-radius: 5px;
+    padding: 4px;
+    text-align: center;
+    margin: 14px;
+}
+
+.Interactions {
+    background-color: #222347;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px white;
+    color: white;
+    margin-bottom: 14px;
+}
+
+.InteractionsHeader {
+    text-align: center;
+}
+
+.reds {
+    background-color: red;
+    color: white;
+    border-radius: 14px;
+    text-align: center;
+    padding: 4px;
+    margin: 12px;
+}
+
+/******* Mobile responsiveness ************/
+
+@media screen  and (max-width: 800px) {
+   
+    nav ul li:not(:nth-child(6)) {
+        display: none;
+        padding: 15px;
+        z-index: 3;
+    }
+   
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        float: right;
+        padding: 10px;
+        height: 15px;
+        width: 15px;
+    }
+
+    .lowerBox {
+        height: 700px;
+        background-color: #222347;
+        box-shadow: 5px 5px 12px 0px black;
+        margin: 10px 0px 0px 0px;
+    }
+
+    div.ageStyle {
+        margin-top: 50px;
+        color: white;
+        float: right;
+    }
+    
+    div.ageStyle h2 {
+        text-align: center
+    }
+    
+    div.residenceStyle {
+        margin-top: 50px;
+        color: white;
+    }
+    
+    div.residenceStyle h2 {
+        text-align: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/** notification css **/
+
+.card {
+    overflow-x: clip;
+}
+
+a.exceptLink {
+    text-decoration: underline;
+    color: black;
+}
+
+.notification-push {
+    float: right;
+}
+
+.main-div {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+}
+
+.right-bar {
+    height: 100vh;
+    background-color: white;
+    overflow: auto;
+}
+
+.card-positioning {
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.padding-insurer2 {
+    position: relative;
+    height: 164px;
+    width: 100%;
+}
+
+#closeCard {
+    position: absolute;
+    right: 14px;
+}
+
+.right-bar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.right-bar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.right-bar::-webkit-scrollbar-thumb {
+    background-color: rgb(222, 228, 209);
+    border-radius: 10px;
+}
+
+
+

@@ -1,0 +1,18 @@
+CREATE table details(userid int not null,
+                     username varchar(100) not null,
+                     gender char(16) not null,
+                     preferredagerange char(12) not null,
+                     hobby1 char(30),
+                     hobby2 char(30),
+                     hobby3 char(30),
+                     hobby4 char(30),
+                     about longtext,
+                     primary key(username),
+                     FOREIGN key(username) REFERENCES users(username) on update cascade);
+
+
+INSERT INTO 
+`details` (`userid`, `username`, `gender`, `preferredagerange`, `hobby1`, `hobby2`, `hobby3`, `hobby4`, `about`) 
+VALUES ('4', 'keith', 'male', '18-25', 'swimming', 'reading', 'gaming', 'coding', 'a lot');
+
+ALTER TABLE details add CONSTRAINT details_ibfk_6 foreign key(userid) REFERENCES users(userid) on DELETE CASCADE;

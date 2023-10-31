@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: block;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    position: relative;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+div.col-6 {
+    padding: 0;
+    width: 50%;
+    margin: 0;
+}
+
+div.col-4.top-left-0 {
+   
+    height: 225.3px;
+    width:250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    float: left;
+    display: block;
+    z-index: 0;
+}
+
+div.col-4.top-left-1 {
+    position: absolute;
+    background-image: url("/findr_demo/images/curved-top-left-1.svg");
+    height: 162px;
+    width: 268px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 18%;
+    top: 0;
+    float: left;
+    display: block;
+    z-index: 0;
+}
+
+div.col-4.top-left-2 {
+    position: absolute;
+    background-image: url("/findr_demo/images/curved-top-left-2.svg");
+    height: 287px;
+    width:169px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 43%;
+    top: 0%;
+    padding-left: 6px;
+    float: right;
+    display: block;
+    z-index: 1;
+}
+
+div.col-6.topnav-left-img {
+    position: relative;
+    background-image: url("/findr_demo/images/curved-purple-top-right-main.svg");
+    background-size: cover;
+    object-fit: cover;
+    height:800px;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    float: right;
+    display: block;
+    z-index: 0;
+}
+
+div.smooch-hentai {
+    position: relative;
+    background-image: url("/findr_demo/images/Smooch-hentai.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 415px;
+    right: 0;
+    top: 0;
+    float: right;
+    padding: 15px;
+    display: block;
+    z-index: 1;
+}
+
+ul.topnav-right > li {
+    padding: 6px;
+    float: right;
+    list-style: none;
+    text-align: center;
+    z-index: 1;
+}
+
+ul.topnav-right > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.box-1 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+h1.box-text-1 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 64px;
+    color: #E05959;
+}
+
+div.col-6.mid-left-image {
+    background-image: url("/findr_demo/images/activity-girl.svg");
+    float: right;
+    height: 650px;
+    background-repeat: no-repeat;
+}
+
+div.col-4 {
+    display: block;
+}
+
+div.col-6.mid-right-image {
+    background-image: url("/findr_demo/images/hand-guy.svg");
+    float: left;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+}
+
+div.chatImg {
+    display: block;
+    background-image: url("/findr_demo/images/chat-groups.svg");
+    height: 680px;
+    width: 100%;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+div.rightText {
+    max-width: 100%;
+    height: 500px;
+    display: block;
+    background-image: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+div.leftText {
+    max-width: 100%;
+    height: 500px;
+    display: block;
+    background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+}
+
+div.row.userCount {
+    border-radius: 20px;
+    margin: 10px;
+}
+
+div.col-12.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    max-width: 100%;
+}
+
+div.col-2.innerBox {
+    margin-left: 153px;
+}
+
+div.col-3.profBox2 {
+    height: 420px;
+    width: 230px;
+    background-color: #e7c5d6;
+    border-radius: 15px;
+    box-shadow: 8px 6px 20px 2px black;
+}
+
+div.col-3.profBox1 {
+    height: 420px;
+    width: 230px;
+    background-color: #a0cdcd;
+    border-radius: 15px;
+    margin: 40px 5px 10px 5px;
+    box-shadow: 8px 13px 20px 5px black;
+}
+
+div.col-3.profBox1 img {
+    padding: 12px;
+}
+
+div.col-3.profBox2 img {
+    padding: 12px;
+}
+
+div.col-3.profBox3 img {
+    padding: 12px;
+}
+
+div.boxTextmid {
+    padding: 10px;
+    position: absolute;
+    left: 25%;
+    top: 1%;
+}
+
+div.boxTextmid1 {
+    padding: 10px;
+    position: absolute;
+    left: 1%;
+    top: 51%;
+}
+
+div.boxTextmid2 {
+    padding: 10px;
+    position: absolute;
+    left: 58%;
+    top: 30%;
+}
+
+div.col-6.leftText > div.col-5 {
+    position: absolute;
+    flex-wrap: wrap;
+    top: 40%;
+    left: 4%;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    padding: 7px;
+    border: rgb(23, 218, 72) solid;
+}
+
+div.col-6.leftText > div.col-5 p {
+    font-size: 28px;
+}
+
+div.col-6.rightText > div.col-5 {
+    position: absolute;
+    flex-wrap: wrap;
+    top: 9%;
+    left: 56%;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    padding: 7px;
+    border: #17adda solid;
+}
+
+div.col-6.rightText > div.col-5 p {
+    font-size: 28px;
+}
+
+div.col-3.profBox3 {
+    height: 420px;
+    width: 230px;
+    background-color: #25ef00a8;
+    border-radius: 15px;
+    margin: 40px 5px 10px 13px;
+    box-shadow: 8px 6px 20px 2px black;
+}
+
+div.box-1 p {
+    font-size: x-large;
+}
+
+div.col-9 {
+    display: block;
+    margin: auto;
+}
+
+div.col-9 button {
+    display: block;
+    margin: auto;
+    padding-left: 65px;
+    padding-right: 65px;
+    align-items: center;
+}
+
+div.col-4.boxTextmid2 p {
+    color: #10e3d9;
+    font-size: 22px;
+}
+
+div.col-4.boxTextmid1 p {
+    color: #ff0ecb;
+    font-size: 18px;
+}
+
+button.bttn {
+    display: block;
+    margin: auto;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 26px;
+    padding-left: 76px;
+    padding-right: 76px;
+}
+
+div.col-5 h3 {
+    display: block;
+    margin: 80px;
+    width: 100%;
+    font-size: 20px;
+}
+
+div.userCount {
+    height: 400px;
+    width: 100%;
+    background-color: #FB550E;
+}
+
+div.col-3.profBox3 > img {
+    border-radius: 15px;
+}
+
+div.col-3.profBox2 > img {
+    border-radius: 15px;
+}
+
+div.col-3.profBox1 > img {
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

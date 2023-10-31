@@ -1,0 +1,271 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.main-bar {
+    background-color: #4b0082;
+}
+
+.site-title {
+    text-align: center;
+    color: white;
+}
+
+.back-left {
+    position: fixed;
+    top: 4px;
+    left: 8px;
+}
+
+.context-bar {
+    background-color: #91b8ff;
+}
+
+.context-bar-deviation {
+    background-color: #8eb1f1;
+}
+
+.message-title {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.active-chat-username {
+    position: relative;
+    left: -60px;
+    top: 5px;
+}
+
+.active-chat-status {
+    position: relative;
+    left: -57px;
+    top: -7px;
+    color: green;
+}
+
+.active-chat-status:hover > div > p {
+    color: green;
+}
+
+p {
+    margin: 0;
+}
+
+
+.inbox-chat-username {
+    position: relative;
+    top:  4px;
+    left: -26px;
+}
+
+.inbox-chat-status {
+    position: relative;
+    top: -4px;
+    left: -22px;
+    color: #51ed2a;
+}
+
+.inbox-chat-status:hover > div > p {
+    color: #51ed2a;
+}
+
+.main-div {
+    height: 100%;
+    overflow: hidden;
+    inset: 0 0 0 0;
+    scroll-snap-type: y mandatory;
+}
+
+.encryption-text {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.inbox-column {
+    height: 100vh;
+    background-color: #f2f5f45c;
+    overflow: scroll;
+}
+
+.spaced-out {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.padding-insurer {
+    padding: 200px;
+}
+
+.padding-insurer2 {
+    position: relative;
+    height: 164px;
+    width: 100%;
+}
+
+textarea.text-box-holder {
+    width: 750px;
+    position: absolute;
+    bottom: -1px;
+    left: 55px;
+    border-radius: 14px;
+    box-shadow: 3px 3px 20px black;
+    outline: none;
+    padding: 6px;
+   height: 42px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    color: black;
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-track {
+    color: black;
+    width: 4px;
+}
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+.send-button {
+    position: absolute;
+    width: 58px;
+    right: -821px;
+    bottom: 1px;
+}
+
+.chat-column {
+    height: 100vh;
+    overflow: scroll;
+   background-image: url(/findr_demo//images/waBg2.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    
+}
+
+.info-chat-bar {
+    display: block;
+    margin: auto;
+    width: 35%;
+    background-color: #dddddd;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.info-text {
+    text-align: center;
+    color: grey;
+    padding: 2px;
+}
+
+.text-box {
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    left: 25.1%;
+    width: 3%;
+    height: 45px;
+    background-color: white;
+    border-radius: 45px;
+    border: transparent;
+    box-shadow: 3px 3px 20px black;
+    z-index: 1;
+}
+
+
+.emojis {
+    position: relative;
+    left: 12px;
+    top: 8px;
+}
+
+/* .text-holder {
+    position: relative;
+    left: -128px;
+    top: 6px;
+} */
+
+input {
+    padding: 3px;
+    border: transparent;
+    outline: none;
+    width: 90%;
+    margin: auto;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+input:focus, input:active {
+    border: transparent;
+}
+
+input[type=text] {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.message-mine {
+    float: right;
+    display: block;
+    background-image: linear-gradient(to top, #4E65FF, #92EFFD);
+    border-radius: 12px 12px 0px 12px;
+    padding: 6px;
+    margin: 4px;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    scroll-padding-bottom: 400px;
+}
+
+.message-theirs {
+    float: left;
+    display: block;
+    background-image: linear-gradient(to bottom, #A9F1DF , #FFBBBB);
+    border-radius: 12px 12px 12px 0px;
+    padding: 6px;
+    margin: 4px;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
+
+
+
+
+.inbox-column::-webkit-scrollbar {
+    width: 4px;
+}
+
+.inbox-column::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.inbox-column::-webkit-scrollbar-thumb {
+    background-color: rgb(222, 228, 209);
+    border-radius: 10px;
+}
+
+.chat-column::-webkit-scrollbar {
+    width: 4px;
+}
+
+.chat-column::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chat-column::-webkit-scrollbar-thumb {
+    background-color: rgb(222, 228, 209);
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

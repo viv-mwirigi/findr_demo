@@ -1,0 +1,13 @@
+-remove user profile from chat sessions
+-when a user clicks match they should be allowed to view user profile
+-for the block btn
+    -when clicked check if blocked file exists
+    -if not then create the file and folder
+    -store the location in a db entry for details eg /blocked/carol/blocked.txt
+    -add the entry in the format victor = yes
+-for the unblock btn
+    -change the entry in the format victor = no
+-for the chat sessions
+    -if carol blocked victor then they shouldn't be able to chat or view profile
+    -so essentially prevent the recipients(carol) chat file from being updated
+    -before showing user profile then ensure that the user is allowed to view it
